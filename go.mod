@@ -1,6 +1,6 @@
 module github.com/justinas-b/statuspage.io-maintenance-cli
 
-go 1.21.1
+go 1.21
 
 require (
 	github.com/charmbracelet/bubbles v0.16.1
