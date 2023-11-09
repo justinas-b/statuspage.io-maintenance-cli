@@ -53,7 +53,7 @@ brews:
     repository:
       owner: justinas-b
       name: homebrew-tap
-      # token: "{{ .Env.GITHUB_PERSONAL_AUTH_TOKEN }}"
+      token: "{{ .Env.HOMEBREW_REPO_TOKEN }}"
     commit_author:  # Git author used to commit to the repository.
       name: goreleaserbot
       email: bot@goreleaser.com
