@@ -49,7 +49,7 @@ changelog:
       - "^test:"
 
 brews:
-  -
+  - name: statuspageio-maintenance-cli
     repository:
       owner: justinas-b
       name: homebrew-tap
