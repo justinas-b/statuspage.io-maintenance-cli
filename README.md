@@ -21,3 +21,9 @@ Or using `STATUSPAGE_API_KEYS` environment variable:
 In case you have multiple StatusPage organizations, you can pass multiple API keys by separating them using comma.
 
 # Installing
+
+```
+> brew tap justinas-b/homebrew-tap
+> brew update
+> brew install statuspageio-maintenance-cli
+```
