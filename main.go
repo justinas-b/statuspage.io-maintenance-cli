@@ -25,7 +25,7 @@ var (
 func getAPIKeysFromArgs() error {
 	flag.StringVar(&apiKeys, "apiKeys", "", "Comma-separated list of API keys")
 	flag.Parse()
-	if f := flag.CommandLine.Lookup("apiKeys"); f == nil {
+	if f := flag.CommandLine.Lookup("apiKeys"); f.Value.String() == "" {
 		return errors.New("apiKeys argument not set")
 	}
 	return nil
