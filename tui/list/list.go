@@ -118,7 +118,7 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			// TODO: extract as method to sort list
 			items := m.List.Items()
 			sort.Slice(items, func(i, j int) bool {
-				if items[i].(Item).Checked == true && items[j].(Item).Checked == false {
+				if items[i].(Item).Checked && !items[j].(Item).Checked {
 					return true
 				}
 				return false
