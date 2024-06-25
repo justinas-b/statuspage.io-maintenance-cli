@@ -70,6 +70,7 @@ func (c *Client) SetMaintenance(pageID string, name string, body string, startTi
 		Body:                             body,
 		ScheduledFor:                     startTime.Format(time.RFC3339Nano), // "2013-05-07T03:00:00.007Z"
 		ScheduledUntil:                   endTime.Format(time.RFC3339Nano),   // "2013-05-07T03:00:00.007Z"
+		DeliverNotifications:             true,
 	}
 	incidentBody := map[string]Incident{"incident": incident}
 	payload, _ := json.Marshal(incidentBody)
